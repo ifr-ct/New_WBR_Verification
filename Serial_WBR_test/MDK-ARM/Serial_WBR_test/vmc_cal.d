@@ -28,6 +28,7 @@ serial_wbr_test\vmc_cal.o: ../Drivers/CMSIS/DSP/Include/dsp/transform_functions.
 serial_wbr_test\vmc_cal.o: ../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h
 serial_wbr_test\vmc_cal.o: ../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h
 serial_wbr_test\vmc_cal.o: ../Core/Inc/Chassis_Controller.h
+serial_wbr_test\vmc_cal.o: ../IFR_LIB-V4.0/ifr_pid.h
 serial_wbr_test\vmc_cal.o: ../Inc/main.h
 serial_wbr_test\vmc_cal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 serial_wbr_test\vmc_cal.o: ../Inc/stm32f4xx_hal_conf.h

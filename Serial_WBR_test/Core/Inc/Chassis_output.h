@@ -8,6 +8,7 @@
 #include "Chassis_Controller.h"
 #include "VOFA_Justfloat_Transmit.h"
 #include "VMC_Cal.h"
+#include "LQR_Cal.h"
 extern IFR_RS_Motor L_motor_1;
 extern IFR_RS_Motor L_motor_4;
 extern IFR_RS_Motor R_motor_1;

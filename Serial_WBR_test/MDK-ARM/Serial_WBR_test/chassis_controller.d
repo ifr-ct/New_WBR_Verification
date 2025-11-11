@@ -1,5 +1,6 @@
 serial_wbr_test\chassis_controller.o: ..\Core\Src\Chassis_Controller.cpp
 serial_wbr_test\chassis_controller.o: ../Core/Inc/Chassis_Controller.h
+serial_wbr_test\chassis_controller.o: ../IFR_LIB-V4.0/ifr_pid.h
 serial_wbr_test\chassis_controller.o: ../Inc/main.h
 serial_wbr_test\chassis_controller.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 serial_wbr_test\chassis_controller.o: ../Inc/stm32f4xx_hal_conf.h

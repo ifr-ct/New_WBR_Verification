@@ -38,3 +38,4 @@ serial_wbr_test\vofa_justfloat_transmit.o: ../Inc/main.h
 serial_wbr_test\vofa_justfloat_transmit.o: ../IFR_LIB-V4.0/ifr_usart_queue.h
 serial_wbr_test\vofa_justfloat_transmit.o: D:\Program File\Keil v5\ARM\ARMCC\Bin\..\include\string.h
 serial_wbr_test\vofa_justfloat_transmit.o: ../Core/Inc/Chassis_Controller.h
+serial_wbr_test\vofa_justfloat_transmit.o: ../IFR_LIB-V4.0/ifr_pid.h

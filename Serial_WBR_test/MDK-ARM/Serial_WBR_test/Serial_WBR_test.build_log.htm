@@ -27,35 +27,18 @@ Project File Date:  11/06/2025
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program File\Keil v5\ARM\ARMCC\Bin'
 Build target 'Serial_WBR_test'
-compiling Chassis_Controller.cpp...
-compiling VOFA_Justfloat_Transmit.cpp...
-..\Core\Src\VOFA_Justfloat_Transmit.cpp(79): warning:  #1-D: last line of file ends without a newline
-  }
-..\Core\Src\VOFA_Justfloat_Transmit.cpp: 1 warning, 0 errors
 compiling LQR_Cal.cpp...
-../Core/Inc/LQR_Cal.h(26): warning:  #1-D: last line of file ends without a newline
+../Core/Inc/LQR_Cal.h(33): warning:  #1-D: last line of file ends without a newline
   #endif
-..\Core\Src\LQR_Cal.cpp(20): warning:  #1-D: last line of file ends without a newline
+..\Core\Src\LQR_Cal.cpp(48): warning:  #177-D: variable "list"  was declared but never referenced
+  		float list[12][4];
+..\Core\Src\LQR_Cal.cpp(79): warning:  #1-D: last line of file ends without a newline
   }
-..\Core\Src\LQR_Cal.cpp(4): warning:  #550-D: variable "phi"  was set but never used
-  	float phi;
-..\Core\Src\LQR_Cal.cpp(5): warning:  #550-D: variable "d_phi"  was set but never used
-  	float d_phi;
-..\Core\Src\LQR_Cal.cpp(8): warning:  #177-D: variable "theta"  was declared but never referenced
-  	float theta;
-..\Core\Src\LQR_Cal.cpp(9): warning:  #177-D: variable "d_theta"  was declared but never referenced
-  	float d_theta;
-..\Core\Src\LQR_Cal.cpp: 6 warnings, 0 errors
-compiling VMC_Cal.cpp...
-..\Core\Src\VMC_Cal.cpp(66): warning:  #1-D: last line of file ends without a newline
-  }
-..\Core\Src\VMC_Cal.cpp: 1 warning, 0 errors
-compiling Chassis_output.cpp...
-compiling main.c...
+..\Core\Src\LQR_Cal.cpp: 3 warnings, 0 errors
 linking...
-Program Size: Code=26990 RO-data=2694 RW-data=76 ZI-data=5676  
+Program Size: Code=28854 RO-data=2698 RW-data=124 ZI-data=6412  
 FromELF: creating hex file...
-"Serial_WBR_test\Serial_WBR_test.axf" - 0 Error(s), 8 Warning(s).
+"Serial_WBR_test\Serial_WBR_test.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -79,7 +62,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.4.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:12
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

@@ -70,3 +70,4 @@ serial_wbr_test\chassis_output.o: ../Drivers/CMSIS/DSP/Include/dsp/svm_defines.h
 serial_wbr_test\chassis_output.o: ../Drivers/CMSIS/DSP/Include/dsp/transform_functions.h
 serial_wbr_test\chassis_output.o: ../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h
 serial_wbr_test\chassis_output.o: ../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h
+serial_wbr_test\chassis_output.o: ../Core/Inc/LQR_Cal.h

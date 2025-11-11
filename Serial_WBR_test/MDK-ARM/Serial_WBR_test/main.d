@@ -76,3 +76,4 @@ serial_wbr_test\main.o: ../Drivers/CMSIS/DSP/Include/dsp/svm_defines.h
 serial_wbr_test\main.o: ../Drivers/CMSIS/DSP/Include/dsp/transform_functions.h
 serial_wbr_test\main.o: ../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h
 serial_wbr_test\main.o: ../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h
+serial_wbr_test\main.o: ../Core/Inc/LQR_Cal.h
