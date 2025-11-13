@@ -43,6 +43,11 @@ serial_wbr_test\chassis_output.o: ../IFR_LIB-V4.0/ifr_motor.h
 serial_wbr_test\chassis_output.o: ../IFR_LIB-V4.0/ifr_robstride.h
 serial_wbr_test\chassis_output.o: ../IFR_LIB-V4.0/ifr_tim.h
 serial_wbr_test\chassis_output.o: ../Core/Inc/Chassis_Controller.h
+serial_wbr_test\chassis_output.o: ../IMU/bmi088.h
+serial_wbr_test\chassis_output.o: ../Inc/stm32f4xx_it.h
+serial_wbr_test\chassis_output.o: ../Inc/spi.h
+serial_wbr_test\chassis_output.o: ../IMU/BMI088reg.h
+serial_wbr_test\chassis_output.o: ../Inc/tim.h
 serial_wbr_test\chassis_output.o: ../Core/Inc/VOFA_Justfloat_Transmit.h
 serial_wbr_test\chassis_output.o: ../IFR_LIB-V4.0/ifr_usart.h
 serial_wbr_test\chassis_output.o: ../IFR_LIB-V4.0/ifr_usart_queue.h

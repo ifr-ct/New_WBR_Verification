@@ -28,6 +28,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "Chassis_output.h"
+#include "bmi088.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,7 +100,13 @@ int main(void)
   MX_TIM10_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+	cali_param_init();
+//	while(BMI088_init())
+//	{
+//		HAL_Delay(1);
+//	}
 	Chassis_Init();
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,6 +116,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		Calibrate();
+//		HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }

@@ -47,8 +47,9 @@
 "serial_wbr_test\stm32f4xx_hal_tim.o"
 "serial_wbr_test\stm32f4xx_hal_tim_ex.o"
 "serial_wbr_test\stm32f4xx_hal_uart.o"
-"../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib"
 "serial_wbr_test\arm_atan2_f32.o"
+"../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib"
+"serial_wbr_test\bmi088.o"
 --strict --scatter "Serial_WBR_test\Serial_WBR_test.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

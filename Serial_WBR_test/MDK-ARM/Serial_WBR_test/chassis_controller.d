@@ -35,3 +35,9 @@ serial_wbr_test\chassis_controller.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f
 serial_wbr_test\chassis_controller.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 serial_wbr_test\chassis_controller.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 serial_wbr_test\chassis_controller.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+serial_wbr_test\chassis_controller.o: ../IMU/bmi088.h
+serial_wbr_test\chassis_controller.o: D:\Program File\Keil v5\ARM\ARMCC\Bin\..\include\string.h
+serial_wbr_test\chassis_controller.o: ../Inc/stm32f4xx_it.h
+serial_wbr_test\chassis_controller.o: ../Inc/spi.h
+serial_wbr_test\chassis_controller.o: ../IMU/BMI088reg.h
+serial_wbr_test\chassis_controller.o: ../Inc/tim.h

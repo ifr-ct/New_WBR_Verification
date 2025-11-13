@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../IFR_LIB-V4.0;../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Drivers/CMSIS/DSP/Include;../Middlewares/ST/ARM/DSP/Inc</IncludePath>
+              <IncludePath>../Inc;../IFR_LIB-V4.0;../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Drivers/CMSIS/DSP/Include;../Middlewares/ST/ARM/DSP/Inc;../IMU</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1709,6 +1709,11 @@
           </GroupOption>
           <Files>
             <File>
+              <FileName>arm_atan2_f32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\CMSIS\DSP\Source\FastMathFunctions\arm_atan2_f32.c</FilePath>
+            </File>
+            <File>
               <FileName>arm_cortexM4lf_math.lib</FileName>
               <FileType>4</FileType>
               <FilePath>../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib</FilePath>
@@ -1732,10 +1737,15 @@
                 <FileArmAds/>
               </FileOption>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>IMU</GroupName>
+          <Files>
             <File>
-              <FileName>arm_atan2_f32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\CMSIS\DSP\Source\FastMathFunctions\arm_atan2_f32.c</FilePath>
+              <FileName>bmi088.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\IMU\bmi088.cpp</FilePath>
             </File>
           </Files>
         </Group>

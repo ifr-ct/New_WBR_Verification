@@ -60,3 +60,8 @@ serial_wbr_test\vmc_cal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi
 serial_wbr_test\vmc_cal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 serial_wbr_test\vmc_cal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 serial_wbr_test\vmc_cal.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+serial_wbr_test\vmc_cal.o: ../IMU/bmi088.h
+serial_wbr_test\vmc_cal.o: ../Inc/stm32f4xx_it.h
+serial_wbr_test\vmc_cal.o: ../Inc/spi.h
+serial_wbr_test\vmc_cal.o: ../IMU/BMI088reg.h
+serial_wbr_test\vmc_cal.o: ../Inc/tim.h

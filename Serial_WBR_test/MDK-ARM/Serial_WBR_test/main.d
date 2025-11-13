@@ -49,6 +49,9 @@ serial_wbr_test\main.o: ../IFR_LIB-V4.0/ifr_motor.h
 serial_wbr_test\main.o: ../IFR_LIB-V4.0/ifr_robstride.h
 serial_wbr_test\main.o: ../IFR_LIB-V4.0/ifr_tim.h
 serial_wbr_test\main.o: ../Core/Inc/Chassis_Controller.h
+serial_wbr_test\main.o: ../IMU/bmi088.h
+serial_wbr_test\main.o: ../Inc/stm32f4xx_it.h
+serial_wbr_test\main.o: ../IMU/BMI088reg.h
 serial_wbr_test\main.o: ../Core/Inc/VOFA_Justfloat_Transmit.h
 serial_wbr_test\main.o: ../IFR_LIB-V4.0/ifr_usart.h
 serial_wbr_test\main.o: ../IFR_LIB-V4.0/ifr_usart_queue.h

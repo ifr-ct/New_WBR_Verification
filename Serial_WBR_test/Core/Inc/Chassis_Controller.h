@@ -1,6 +1,7 @@
 #ifndef __CHASSIS_CONTROLLER_H
 #define __CHASSIS_CONTROLLER_H
 #include "ifr_pid.h"
+#include "bmi088.h"
 #include "main.h"
 //常量设置
 const float K = 2.1904f;
@@ -16,7 +17,8 @@ const float DEG_2_RAD = 0.0174533f;
 const float RAD_2_DEG = 57.2958f;
 const float GEAR_REDUCTION_RATIO_M2L = 0.3846f;//  MOTER->LEG 齿轮减速比
 const float GEAR_REDUCTION_RATIO_L2M = 2.6f;	 //  LEG->MOTER 齿轮减速比
-const float G_compensation = 10;
+const float G_COMPENSATION = 10.0f;
+
 /*
 		单腿各点角度结构体
 */
@@ -74,6 +76,7 @@ typedef struct Output
 */
 typedef struct VMC_result
 {
+	VMC_result():l0_target(0.35f){}
 	float phi0;
 	float l0;
 	float l0_target;
@@ -122,10 +125,7 @@ typedef struct Body_Info
 class Single_Leg_Typedef
 {
 	public:
-		Single_Leg_Typedef(uint8_t Legid):Leg_id(Legid)
-		{
-			Leg_Length_PID.PID_Init(0 , 0 , 0 , 100 , 1 , 0 , 0 , 1000 , 0.1);
-		}
+		Single_Leg_Typedef(uint8_t Legid):Leg_id(Legid),G_compensation(G_COMPENSATION){}
 	
 	Angle_ Angle_state;
 	Speed_ Speed_state;
@@ -138,9 +138,11 @@ class Single_Leg_Typedef
 	VMC_ VMC_Result;
 	IFR_PID Leg_Length_PID;
 	uint8_t Leg_id;
+	float G_compensation;
 	void L_Control();
 };
-
+void chassis_PID_init();
 extern Single_Leg_Typedef Left_Leg;
 extern Single_Leg_Typedef Right_Leg;
+extern IMU_InfoTypedef IMU_Info;
 #endif
