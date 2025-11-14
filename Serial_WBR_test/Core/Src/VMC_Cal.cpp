@@ -9,6 +9,13 @@ VMC_CAL_::VMC_CAL_(Single_Leg_Typedef * leg_info)
 	Leg_info = leg_info;
 }
 
+/**
+ * @brief  VMC力矩映射计算函数
+ * @param  力矩需求结构体指针
+ * @param  输出力矩结构体指针
+ * @return void
+ * @note   none
+ */
 void VMC_CAL_::Torque_Cal(Tip_output_require * require , Output_ * output)
 {
 	F[0] = require->F0;
@@ -20,6 +27,13 @@ void VMC_CAL_::Torque_Cal(Tip_output_require * require , Output_ * output)
 	output->T2 = Tmat.pData[1];
 } 
 
+/**
+ * @brief  雅可比矩阵更新函数
+ * @param  髋关节角度结构体指针
+ * @param  VMC结果结构体指针
+ * @return void
+ * @note   none
+ */
 void VMC_CAL_::Jmat_Update(Angle_ * angle , VMC_ * result)
 {
 	float xb = l1 * arm_cos_f32(angle->phi1);
@@ -59,8 +73,8 @@ void VMC_CAL_::Jmat_Update(Angle_ * angle , VMC_ * result)
 	arm_mat_init_f32(&Jmat , 2 , 2 , J);
 }
 
-void VMC_CAL_::VMC_CAL()
-{
-	Jmat_Update(&Leg_info->Angle_state , &Leg_info->VMC_Result);
-	Torque_Cal(&Leg_info->Tip_Require , &Leg_info->Final_Output);
-}
+//void VMC_CAL_::VMC_CAL()
+//{
+//	Jmat_Update(&Leg_info->Angle_state , &Leg_info->VMC_Result);
+//	Torque_Cal(&Leg_info->Tip_Require , &Leg_info->Final_Output);
+//}

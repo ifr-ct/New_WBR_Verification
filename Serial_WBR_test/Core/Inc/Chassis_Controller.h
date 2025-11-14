@@ -81,15 +81,15 @@ typedef struct VMC_result
 	float l0;
 	float l0_target;
 }VMC_;
-/*
-		电机状态结构体
-*/
-typedef struct Wheel_Info
-{
-	float wheel_pos;
-	float wheel_speed;
-	float wheel_accel;
-}Wheel_;
+///*
+//		电机状态结构体
+//*/
+//typedef struct Wheel_Info
+//{
+//	float wheel_pos;
+//	float wheel_speed;
+//	float wheel_accel;
+//}Wheel_;
 
 /*
 		机体状态结构体
@@ -103,6 +103,10 @@ typedef struct Body_Info
 	float d_pitch;
 	float d_yaw;
 	float d_roll;
+	
+	float x;
+	float d_x;
+	float d_d_x;
 }Body_;
 /*
 		@单腿模型状态类：
@@ -130,7 +134,6 @@ class Single_Leg_Typedef
 	Angle_ Angle_state;
 	Speed_ Speed_state;
 	Accel_ Accel_state;
-	Wheel_ Wheel_state;
 	Body_  Body_state;
 	
 	Tip_output_require Tip_Require;

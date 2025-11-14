@@ -1,7 +1,17 @@
 #include "LQR_Cal.h"
 LQR_CAL_ Left_LQR(&Left_Leg);
 LQR_CAL_ Right_LQR(&Right_Leg);
-void LQR_CAL_::State_Update(Angle_ angle , Speed_ speed , Wheel_ wheel_info , Body_ body_info , VMC_ result)
+
+/**
+ * @brief  状态矩阵更新函数
+ * @param  髋关节电机角度结构体指针
+ * @param  髋关节电机速度结构体指针
+ * @param  底盘位姿结构体指针
+ * @param  VMC结果结构体指针
+ * @return void
+ * @note  none
+ */
+void LQR_CAL_::State_Update(Angle_ angle , Speed_ speed , Body_ body_info , VMC_ result)
 {
 	float phi;
 	float d_phi;
@@ -10,11 +20,11 @@ void LQR_CAL_::State_Update(Angle_ angle , Speed_ speed , Wheel_ wheel_info , Bo
 	float theta;
 	float d_theta;
 	
-	d_x = wheel_info.wheel_speed * W_R;
-	x += d_x;
-	
 	phi = body_info.pitch;
 	d_phi = body_info.d_pitch;
+	
+	x = body_info.x;
+	d_x = body_info.d_x;
 	
 	theta = result.phi0 - (pi / 2) - body_info.pitch;
 	d_theta = speed.d_phi0 - body_info.d_pitch;
@@ -29,6 +39,13 @@ void LQR_CAL_::State_Update(Angle_ angle , Speed_ speed , Wheel_ wheel_info , Bo
 	arm_mat_init_f32(&Xmat , 6 , 1 , this->x);
 }
 
+/**
+ * @brief  d_phi0计算函数
+ * @param  髋关节电机速度结构体指针
+ * @param  髋关节电机角度结构体指针
+ * @return void
+ * @note   none
+ */
 void LQR_CAL_::d_phi0_Update(Speed_ * speed , Angle_ angle)
 {
 	speed->d_phi0 = ((l1*speed->d_phi1*arm_cos_f32(angle.phi1) + l2*speed->d_phi4*arm_cos_f32(angle.phi4))/
@@ -38,6 +55,12 @@ void LQR_CAL_::d_phi0_Update(Speed_ * speed , Angle_ angle)
 									(l1*arm_cos_f32(angle.phi1) + l2*arm_cos_f32(angle.phi4))*(l1*arm_cos_f32(angle.phi1) + l2*arm_cos_f32(angle.phi4)) + 1);
 }
 
+/**
+ * @brief  依照腿长反求k矩阵
+ * @param  VMC结果结构体指针
+ * @return void
+ * @note   none
+ */
 void LQR_CAL_::Kmat_Simplify(VMC_ vmc_result)
 {
 		static float K[12] = {
@@ -58,22 +81,35 @@ void LQR_CAL_::Kmat_Simplify(VMC_ vmc_result)
 			k[i] = -K[i];
 		}
 		arm_mat_init_f32(&Kmat , 2 , 6 , k);
-		arm_mat_mult_f32(&Kmat , &Xmat , &Umat);
+		
 }
 
+/**
+ * @brief  lqr输出计算函数
+ * @param  void
+ * @return void
+ * @note   none
+ */
 void LQR_CAL_::LQR_Output_Cal()
 {
-	
+	arm_mat_mult_f32(&Kmat , &Xmat , &Umat);
 	u[0] = Umat.pData[0];
 //	Leg_info->Final_Output.T = Umat.pData[0];
 	u[1] = Umat.pData[1];
 //	Leg_info->Tip_Require.Tp = Umat.pData[1];
 }
 
+/**
+ * @brief  lqr计算函数
+ * @param  void
+ * @param  void
+ * @return void
+ * @note   lqr计算仅调用本函数即可
+ */
 void LQR_CAL_::LQR_Total_Cal()
 {
 	d_phi0_Update(&Leg_info->Speed_state , Leg_info->Angle_state);
-	State_Update(Leg_info->Angle_state , Leg_info->Speed_state , Leg_info->Wheel_state , Leg_info->Body_state , Leg_info->VMC_Result);
+	State_Update(Leg_info->Angle_state , Leg_info->Speed_state , Leg_info->Body_state , Leg_info->VMC_Result);
 	Kmat_Simplify(Leg_info->VMC_Result);
 	LQR_Output_Cal();
 }

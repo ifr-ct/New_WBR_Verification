@@ -10,7 +10,7 @@ class VMC_CAL_
 		VMC_CAL_(Single_Leg_Typedef * Leg_info);
 		void Torque_Cal(Tip_output_require * require , Output_ * output);
 		void Jmat_Update(Angle_ * angle , VMC_ * result);
-		void VMC_CAL();
+//		void VMC_CAL();
 	private:
 		arm_matrix_instance_f32 Jmat;
 		arm_matrix_instance_f32 Fmat;

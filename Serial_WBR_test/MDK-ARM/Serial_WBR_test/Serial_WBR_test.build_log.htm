@@ -22,16 +22,21 @@ Dialog DLL:      TCM.DLL V1.36.5.0
  
 <h2>Project:</h2>
 D:\Documents\Keil_Project\Serial_WBR_test\Serial_WBR_test\MDK-ARM\Serial_WBR_test.uvprojx
-Project File Date:  11/13/2025
+Project File Date:  11/14/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program File\Keil v5\ARM\ARMCC\Bin'
 Build target 'Serial_WBR_test'
-compiling main.c...
+compiling LQR_Cal.cpp...
+..\Core\Src\LQR_Cal.cpp(71): warning:  #177-D: variable "list"  was declared but never referenced
+  		float list[12][4];
+..\Core\Src\LQR_Cal.cpp: 1 warning, 0 errors
+compiling VMC_Cal.cpp...
+compiling Chassis_output.cpp...
 linking...
-Program Size: Code=38936 RO-data=2784 RW-data=376 ZI-data=7176  
+Program Size: Code=41754 RO-data=2786 RW-data=376 ZI-data=7176  
 FromELF: creating hex file...
-"Serial_WBR_test\Serial_WBR_test.axf" - 0 Error(s), 0 Warning(s).
+"Serial_WBR_test\Serial_WBR_test.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,7 +60,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.4.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:10
 </pre>
 </body>
 </html>

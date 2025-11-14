@@ -12,7 +12,7 @@ class LQR_CAL_
 			arm_mat_init_f32(&Umat ,2 ,1 ,u);
 		}
 			
-		void State_Update(Angle_ angle , Speed_ speed , Wheel_ wheel_info , Body_ body_info , VMC_ result);
+		void State_Update(Angle_ angle , Speed_ speed , Body_ body_info , VMC_ result);
 		void d_phi0_Update(Speed_ * speed , Angle_ angle);
 		void Kmat_Simplify(VMC_ vmc_result);
 		void LQR_Output_Cal();

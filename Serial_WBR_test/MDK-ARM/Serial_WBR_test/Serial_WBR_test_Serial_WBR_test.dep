@@ -1,7 +1,7 @@
 Dependencies for Project 'Serial_WBR_test', Target 'Serial_WBR_test': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (startup_stm32f407xx.s)(0x6914BB6F)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o serial_wbr_test\startup_stm32f407xx.o --depend serial_wbr_test\startup_stm32f407xx.d)
-F (../Src/main.c)(0x69161472)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\main.o --omf_browse serial_wbr_test\main.crf --depend serial_wbr_test\main.d)
+F (startup_stm32f407xx.s)(0x69161B74)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o serial_wbr_test\startup_stm32f407xx.o --depend serial_wbr_test\startup_stm32f407xx.d)
+F (../Src/main.c)(0x69161BB1)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\main.o --omf_browse serial_wbr_test\main.crf --depend serial_wbr_test\main.d)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
 I (../Inc/stm32f4xx_hal_conf.h)(0x6909C85B)
@@ -41,7 +41,7 @@ I (../Inc/spi.h)(0x69048900)
 I (../Inc/tim.h)(0x69048901)
 I (../Inc/usart.h)(0x69048901)
 I (../Inc/gpio.h)(0x690488FE)
-I (../Core/Inc/Chassis_output.h)(0x691603DA)
+I (../Core/Inc/Chassis_output.h)(0x6916CB55)
 I (../IFR_LIB-V4.0/ifr_can.h)(0x6905AE80)
 I (D:\Program File\Keil v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (../IFR_LIB-V4.0/IFR_Basic_Motor.h)(0x690B2C05)
@@ -50,14 +50,14 @@ I (../IFR_LIB-V4.0/ifr_can_msg_queue.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_motor.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_robstride.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_tim.h)(0x6905AE80)
-I (../Core/Inc/Chassis_Controller.h)(0x6915BAD5)
+I (../Core/Inc/Chassis_Controller.h)(0x6916C4FA)
 I (../IMU/bmi088.h)(0x6915B5D1)
 I (../Inc/stm32f4xx_it.h)(0x6914BB6C)
 I (../IMU/BMI088reg.h)(0x6717D8DE)
 I (../Core/Inc/VOFA_Justfloat_Transmit.h)(0x690D7758)
 I (../IFR_LIB-V4.0/ifr_usart.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_usart_queue.h)(0x6905AE80)
-I (../Core/Inc/VMC_Cal.h)(0x690CE142)
+I (../Core/Inc/VMC_Cal.h)(0x6916C964)
 I (../Drivers/CMSIS/DSP/Include/arm_math.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/arm_math_types.h)(0x690488F5)
 I (D:\Program File\Keil v5\ARM\ARMCC\include\math.h)(0x5D9AD212)
@@ -81,7 +81,7 @@ I (../Drivers/CMSIS/DSP/Include/dsp/svm_defines.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/transform_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h)(0x690488F5)
-I (../Core/Inc/LQR_Cal.h)(0x691328D0)
+I (../Core/Inc/LQR_Cal.h)(0x6916C563)
 F (../Src/gpio.c)(0x6914BB69)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\gpio.o --omf_browse serial_wbr_test\gpio.crf --depend serial_wbr_test\gpio.d)
 I (../Inc/gpio.h)(0x690488FE)
 I (../Inc/main.h)(0x69048903)
@@ -117,7 +117,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x690488F4)
-F (../Src/can.c)(0x6914B462)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\can.o --omf_browse serial_wbr_test\can.crf --depend serial_wbr_test\can.d)
+F (../Src/can.c)(0x69161B6C)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\can.o --omf_browse serial_wbr_test\can.crf --depend serial_wbr_test\can.d)
 I (../Inc/can.h)(0x69048900)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
@@ -612,7 +612,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x690488F4)
-F (..\IFR_LIB-V4.0\ifr_motor.cpp)(0x6905AE80)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\ifr_motor.o --omf_browse serial_wbr_test\ifr_motor.crf --depend serial_wbr_test\ifr_motor.d)
+F (..\IFR_LIB-V4.0\ifr_motor.cpp)(0x6916C299)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\ifr_motor.o --omf_browse serial_wbr_test\ifr_motor.crf --depend serial_wbr_test\ifr_motor.d)
 I (..\IFR_LIB-V4.0\ifr_motor.h)(0x6905AE80)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
@@ -904,8 +904,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x690488F4)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x690488F4)
 I (..\IFR_LIB-V4.0\ifr_usart_queue.h)(0x6905AE80)
 I (D:\Program File\Keil v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-F (..\Core\Src\Chassis_output.cpp)(0x6916111B)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\chassis_output.o --omf_browse serial_wbr_test\chassis_output.crf --depend serial_wbr_test\chassis_output.d)
-I (../Core/Inc/Chassis_output.h)(0x691603DA)
+F (..\Core\Src\Chassis_output.cpp)(0x6916CE76)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\chassis_output.o --omf_browse serial_wbr_test\chassis_output.crf --depend serial_wbr_test\chassis_output.d)
+I (../Core/Inc/Chassis_output.h)(0x6916CB55)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
 I (../Inc/stm32f4xx_hal_conf.h)(0x6909C85B)
@@ -947,7 +947,7 @@ I (../IFR_LIB-V4.0/ifr_can_msg_queue.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_motor.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_robstride.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_tim.h)(0x6905AE80)
-I (../Core/Inc/Chassis_Controller.h)(0x6915BAD5)
+I (../Core/Inc/Chassis_Controller.h)(0x6916C4FA)
 I (../IMU/bmi088.h)(0x6915B5D1)
 I (../Inc/stm32f4xx_it.h)(0x6914BB6C)
 I (../Inc/spi.h)(0x69048900)
@@ -956,7 +956,7 @@ I (../Inc/tim.h)(0x69048901)
 I (../Core/Inc/VOFA_Justfloat_Transmit.h)(0x690D7758)
 I (../IFR_LIB-V4.0/ifr_usart.h)(0x6905AE80)
 I (../IFR_LIB-V4.0/ifr_usart_queue.h)(0x6905AE80)
-I (../Core/Inc/VMC_Cal.h)(0x690CE142)
+I (../Core/Inc/VMC_Cal.h)(0x6916C964)
 I (../Drivers/CMSIS/DSP/Include/arm_math.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/arm_math_types.h)(0x690488F5)
 I (D:\Program File\Keil v5\ARM\ARMCC\include\math.h)(0x5D9AD212)
@@ -980,7 +980,7 @@ I (../Drivers/CMSIS/DSP/Include/dsp/svm_defines.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/transform_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h)(0x690488F5)
-I (../Core/Inc/LQR_Cal.h)(0x691328D0)
+I (../Core/Inc/LQR_Cal.h)(0x6916C563)
 F (..\Core\Src\VOFA_Justfloat_Transmit.cpp)(0x691328D0)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\vofa_justfloat_transmit.o --omf_browse serial_wbr_test\vofa_justfloat_transmit.crf --depend serial_wbr_test\vofa_justfloat_transmit.d)
 I (../Core/Inc/VOFA_Justfloat_Transmit.h)(0x690D7758)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
@@ -1019,15 +1019,15 @@ I (../IFR_LIB-V4.0/ifr_usart.h)(0x6905AE80)
 I (../Inc/main.h)(0x69048903)
 I (../IFR_LIB-V4.0/ifr_usart_queue.h)(0x6905AE80)
 I (D:\Program File\Keil v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
-I (../Core/Inc/Chassis_Controller.h)(0x6915BAD5)
+I (../Core/Inc/Chassis_Controller.h)(0x6916C4FA)
 I (../IFR_LIB-V4.0/ifr_pid.h)(0x691497BE)
 I (../IMU/bmi088.h)(0x6915B5D1)
 I (../Inc/stm32f4xx_it.h)(0x6914BB6C)
 I (../Inc/spi.h)(0x69048900)
 I (../IMU/BMI088reg.h)(0x6717D8DE)
 I (../Inc/tim.h)(0x69048901)
-F (..\Core\Src\Chassis_Controller.cpp)(0x6914AE26)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\chassis_controller.o --omf_browse serial_wbr_test\chassis_controller.crf --depend serial_wbr_test\chassis_controller.d)
-I (../Core/Inc/Chassis_Controller.h)(0x6915BAD5)
+F (..\Core\Src\Chassis_Controller.cpp)(0x6916CB55)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\chassis_controller.o --omf_browse serial_wbr_test\chassis_controller.crf --depend serial_wbr_test\chassis_controller.d)
+I (../Core/Inc/Chassis_Controller.h)(0x6916C4FA)
 I (../IFR_LIB-V4.0/ifr_pid.h)(0x691497BE)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
@@ -1068,8 +1068,8 @@ I (../Inc/stm32f4xx_it.h)(0x6914BB6C)
 I (../Inc/spi.h)(0x69048900)
 I (../IMU/BMI088reg.h)(0x6717D8DE)
 I (../Inc/tim.h)(0x69048901)
-F (..\Core\Src\VMC_Cal.cpp)(0x691328D0)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\vmc_cal.o --omf_browse serial_wbr_test\vmc_cal.crf --depend serial_wbr_test\vmc_cal.d)
-I (../Core/Inc/VMC_Cal.h)(0x690CE142)
+F (..\Core\Src\VMC_Cal.cpp)(0x6916CE76)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\vmc_cal.o --omf_browse serial_wbr_test\vmc_cal.crf --depend serial_wbr_test\vmc_cal.d)
+I (../Core/Inc/VMC_Cal.h)(0x6916C964)
 I (../Drivers/CMSIS/DSP/Include/arm_math.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/arm_math_types.h)(0x690488F5)
 I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x690488F5)
@@ -1097,7 +1097,7 @@ I (../Drivers/CMSIS/DSP/Include/dsp/svm_defines.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/transform_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h)(0x690488F5)
-I (../Core/Inc/Chassis_Controller.h)(0x6915BAD5)
+I (../Core/Inc/Chassis_Controller.h)(0x6916C4FA)
 I (../IFR_LIB-V4.0/ifr_pid.h)(0x691497BE)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)
@@ -1134,8 +1134,8 @@ I (../Inc/stm32f4xx_it.h)(0x6914BB6C)
 I (../Inc/spi.h)(0x69048900)
 I (../IMU/BMI088reg.h)(0x6717D8DE)
 I (../Inc/tim.h)(0x69048901)
-F (..\Core\Src\LQR_Cal.cpp)(0x691328D0)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\lqr_cal.o --omf_browse serial_wbr_test\lqr_cal.crf --depend serial_wbr_test\lqr_cal.d)
-I (../Core/Inc/LQR_Cal.h)(0x691328D0)
+F (..\Core\Src\LQR_Cal.cpp)(0x6916CE76)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../IFR_LIB-V4.0 -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/CMSIS/DSP/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../IMU-I.\RTE\_Serial_WBR_test-ID:\Documents\Keil_Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Documents\Keil_Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o serial_wbr_test\lqr_cal.o --omf_browse serial_wbr_test\lqr_cal.crf --depend serial_wbr_test\lqr_cal.d)
+I (../Core/Inc/LQR_Cal.h)(0x6916C563)
 I (../Drivers/CMSIS/DSP/Include/arm_math.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/arm_math_types.h)(0x690488F5)
 I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x690488F5)
@@ -1163,7 +1163,7 @@ I (../Drivers/CMSIS/DSP/Include/dsp/svm_defines.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/transform_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h)(0x690488F5)
 I (../Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h)(0x690488F5)
-I (../Core/Inc/Chassis_Controller.h)(0x6915BAD5)
+I (../Core/Inc/Chassis_Controller.h)(0x6916C4FA)
 I (../IFR_LIB-V4.0/ifr_pid.h)(0x691497BE)
 I (../Inc/main.h)(0x69048903)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x690488F4)

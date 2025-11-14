@@ -101,10 +101,10 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	cali_param_init();
-//	while(BMI088_init())
-//	{
-//		HAL_Delay(1);
-//	}
+	while(BMI088_init())
+	{
+		HAL_Delay(1);
+	}
 	Chassis_Init();
 	
   /* USER CODE END 2 */
@@ -117,7 +117,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		Calibrate();
-//		HAL_Delay(1);
+		HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }

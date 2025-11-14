@@ -46,7 +46,7 @@ extern CAN_HandleTypeDef hcan1;
 extern CAN_HandleTypeDef hcan2;
 void Chassis_Init();
 void Update(Single_Leg_Typedef * leg_info);
-void Euler_Update();
+//void Euler_Update();
 float trans(float angle);
 void TIM2_Callback();
 #endif

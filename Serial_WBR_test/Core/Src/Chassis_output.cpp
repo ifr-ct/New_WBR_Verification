@@ -18,7 +18,13 @@ IFR_RS_Motor R_motor_4(4, RobStride_01, &Can1_Msg);
 Chassis_Motor_output::Chassis_Motor_output()
 {
 }
-
+/**
+ * @brief  地盘初始化函数
+ * @param  void
+ * @param  void
+ * @return void
+ * @note   main函数中调用
+ */
 void Chassis_Init()
 {
 	Tim2.TIM_ITStart(&htim2,TIM2_Callback);
@@ -41,6 +47,14 @@ void Chassis_Init()
 	arm_mat_init_f32(&Chassis.True_d_E_mat , 3 , 1 , Chassis.True_d_Eular_);
 }
 float speed = 0;
+
+/**
+ * @brief  电机输出值计算函数
+ * @param  void
+ * @param  void
+ * @return void
+ * @note   tim2定时器中断中调用
+ */
 void Chassis_Motor_output::Chassis_Motor_Setouttput()
 {
 	L_motor_1.set_torque(-Left_Leg.Final_Output.T1);
@@ -50,7 +64,12 @@ void Chassis_Motor_output::Chassis_Motor_Setouttput()
 	R_motor_4.set_torque(Right_Leg.Final_Output.T2);
 	R_motor_Wheel.set_electric_offset(speed);
 }
-
+/**
+ * @brief  底盘信息更新函数
+ * @param  Single_Leg_Typedef * leg_info 单腿模型类
+ * @return void
+ * @note   tim2定时器中断中调用
+ */
 void Update(Single_Leg_Typedef * leg_info)
 {
 	if(leg_info->Leg_id == 1)//id = 1代表左腿
@@ -61,6 +80,8 @@ void Update(Single_Leg_Typedef * leg_info)
 		leg_info->Angle_state.phi4 = -(L_motor_4.Motordata.Angle - L_Phi4_Start_State) * GEAR_REDUCTION_RATIO_M2L + 112.0f * DEG_2_RAD;
 		leg_info->Speed_state.d_phi1 = - L_motor_1.Motordata.Speed;
 		leg_info->Speed_state.d_phi4 = - L_motor_4.Motordata.Speed;
+		leg_info->Body_state.x = W_R * L_motor_Wheel.Motordata.abs_angle / 17.0f; //3508电机减速箱为17：1
+		leg_info->Body_state.d_x = W_R * L_motor_Wheel.Motordata.Speed / 17.0f;
 	}
 	if(leg_info->Leg_id == 2)//id = 2代表右腿
 	{
@@ -70,12 +91,9 @@ void Update(Single_Leg_Typedef * leg_info)
 		leg_info->Angle_state.phi4 = (R_motor_4.Motordata.Angle - R_Phi4_Start_State) * GEAR_REDUCTION_RATIO_M2L + 112.0f * DEG_2_RAD;
 		leg_info->Speed_state.d_phi1 = R_motor_1.Motordata.Speed;
 		leg_info->Speed_state.d_phi4 = R_motor_4.Motordata.Speed;
+		leg_info->Body_state.x = - W_R * R_motor_Wheel.Motordata.abs_angle / 17.0f;//3508电机减速箱为17：1
+		leg_info->Body_state.d_x = - W_R * R_motor_Wheel.Motordata.Speed / 17.0f;
 	}
-//	Euler_Update();
-}
- 
-void Euler_Update()
-{
 	Chassis.Euler_[0] = IMU_Info.Angle.Yaw;
 	Chassis.Euler_[1] = IMU_Info.Angle.Pitch;
 	Chassis.Euler_[2] = IMU_Info.Angle.Roll;
@@ -107,9 +125,15 @@ void Euler_Update()
 	Right_Leg.Body_state.d_pitch = deg2rad(Chassis.True_d_Eular_[1]);
 	Left_Leg.Body_state.d_roll = - deg2rad(Chassis.True_d_Eular_[2]);
 	Right_Leg.Body_state.d_roll = - deg2rad(Chassis.True_d_Eular_[2]);
-	
 }
 
+
+/**
+ * @brief  IMU坐标系转换函数
+ * @param  传入陀螺仪角度
+ * @return 回传角度
+ * @note   
+ */
 float trans(float angle)
 {
 	float true_angle;
@@ -126,10 +150,8 @@ void TIM2_Callback()
 	timetick++;
 	
 	if(timetick == 3000)prep_flag = 1;
-	if(!(timetick % 4 == 0) && prep_flag == 1)
+	if(!(timetick % 2) && prep_flag == 1)
 	{
-		L_motor_1.Enable(); 
-		L_motor_4.Enable();
 		Update(&Left_Leg);
 		
 		Left_VMC.Jmat_Update(&Left_Leg.Angle_state , &Left_Leg.VMC_Result);
@@ -138,10 +160,8 @@ void TIM2_Callback()
 		Left_VMC.Torque_Cal(&Left_Leg.Tip_Require , &Left_Leg.Final_Output);
 		Chassis.Chassis_Motor_Setouttput();
 	}
-	if((timetick % 4 == 2) && prep_flag == 1)
+	if((timetick % 2) && prep_flag == 1)
 	{
-		R_motor_1.Enable();
-		R_motor_4.Enable();
 		Update(&Right_Leg);
 		
 		Right_VMC.Jmat_Update(&Right_Leg.Angle_state , &Right_Leg.VMC_Result);
