@@ -16,10 +16,11 @@ VMC_CAL_::VMC_CAL_(Single_Leg_Typedef * leg_info)
  * @return void
  * @note   none
  */
-void VMC_CAL_::Torque_Cal(Tip_output_require * require , Output_ * output)
+void VMC_CAL_::Torque_Cal(Tip_output_require * require , Output_ * output , float Offset)
 {
 	F[0] = require->F0;
-	F[1] = require->Tp;
+	F[1] = require->Tp + Offset;
+
 	arm_mat_init_f32(&Fmat , 2 , 1 , F);
 	arm_mat_mult_f32(&Jmat , &Fmat ,&Tmat);
 	

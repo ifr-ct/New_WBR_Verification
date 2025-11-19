@@ -17,6 +17,8 @@ class LQR_CAL_
 		void Kmat_Simplify(VMC_ vmc_result);
 		void LQR_Output_Cal();
 		void LQR_Total_Cal();
+		float Get_theta();
+		float Get_d_theta();
 	private:
 		arm_matrix_instance_f32 Umat;
 		arm_matrix_instance_f32 Xmat;

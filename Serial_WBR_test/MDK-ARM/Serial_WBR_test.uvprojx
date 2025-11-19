@@ -533,14 +533,14 @@
               <FilePath>..\Core\Src\Chassis_output.cpp</FilePath>
             </File>
             <File>
-              <FileName>VOFA_Justfloat_Transmit.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\VOFA_Justfloat_Transmit.cpp</FilePath>
-            </File>
-            <File>
               <FileName>Chassis_Controller.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\Core\Src\Chassis_Controller.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>VOFA_Justfloat_Transmit.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\VOFA_Justfloat_Transmit.cpp</FilePath>
             </File>
             <File>
               <FileName>VMC_Cal.cpp</FileName>

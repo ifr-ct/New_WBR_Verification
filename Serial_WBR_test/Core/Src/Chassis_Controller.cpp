@@ -6,7 +6,7 @@ Single_Leg_Typedef Right_Leg(2);
  * @brief  腿部支持力计算函数
  * @param  void
  * @return void
- * @note   
+ * @note    
  */
 void Single_Leg_Typedef::L_Control()
 {
@@ -22,8 +22,8 @@ void Single_Leg_Typedef::L_Control()
  */
 void chassis_PID_init()
 {
-	Left_Leg.Leg_Length_PID.PID_Init(400 , 1 , 90 , 100 , 1 , 9 , 0 , 0.05 , 0.1);
+	Left_Leg.Leg_Length_PID.PID_Init(360 , 1 , 90 , 100 , 1 , 9 , 0 , 0.05 , 0.1);
 	Right_Leg.Leg_Length_PID.PID_Init(300 , 1 , 40 , 100 , 1 , 9 , 0 , 0.05 , 0.1);
-	Left_Leg.Leg_Length_PID.Separate_PID_Init(600 , 0 , 10);
-	Right_Leg.Leg_Length_PID.Separate_PID_Init(600 , 0 , 10);
+	Left_Leg.Leg_Length_PID.Separate_PID_Init(750 , 0 , 10);
+	Right_Leg.Leg_Length_PID.Separate_PID_Init(700 , 0 , 10);
 }

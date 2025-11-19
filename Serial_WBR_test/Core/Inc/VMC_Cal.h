@@ -8,7 +8,7 @@ class VMC_CAL_
 {
 	public:
 		VMC_CAL_(Single_Leg_Typedef * Leg_info);
-		void Torque_Cal(Tip_output_require * require , Output_ * output);
+		void Torque_Cal(Tip_output_require * require , Output_ * output , float Offset);
 		void Jmat_Update(Angle_ * angle , VMC_ * result);
 //		void VMC_CAL();
 	private:

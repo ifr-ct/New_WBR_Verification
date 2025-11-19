@@ -178,22 +178,32 @@
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Left_LQR</ItemText>
+          <ItemText>IMU_Info</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>IMU_Info</ItemText>
+          <ItemText>Left_LQR</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Chassis</ItemText>
+          <ItemText>Right_LQR</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Error</ItemText>
+          <ItemText>timetick</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>INS_accel</ItemText>
+        </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>bmi088_real_data</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -231,6 +241,11 @@
           <count>6</count>
           <WinNumber>2</WinNumber>
           <ItemText>R_motor_Wheel</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>Chassis</ItemText>
         </Ww>
       </WatchWindow2>
       <Tracepoint>
@@ -443,7 +458,7 @@
 
   <Group>
     <GroupName>IFR_LIB-V4.0</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -642,8 +657,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Core\Src\VOFA_Justfloat_Transmit.cpp</PathWithFileName>
-      <FilenameWithoutPath>VOFA_Justfloat_Transmit.cpp</FilenameWithoutPath>
+      <PathWithFileName>..\Core\Src\Chassis_Controller.cpp</PathWithFileName>
+      <FilenameWithoutPath>Chassis_Controller.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -654,8 +669,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Core\Src\Chassis_Controller.cpp</PathWithFileName>
-      <FilenameWithoutPath>Chassis_Controller.cpp</FilenameWithoutPath>
+      <PathWithFileName>..\Core\Src\VOFA_Justfloat_Transmit.cpp</PathWithFileName>
+      <FilenameWithoutPath>VOFA_Justfloat_Transmit.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

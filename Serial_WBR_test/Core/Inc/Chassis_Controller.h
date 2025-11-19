@@ -18,7 +18,7 @@ const float RAD_2_DEG = 57.2958f;
 const float GEAR_REDUCTION_RATIO_M2L = 0.3846f;//  MOTER->LEG 齿轮减速比
 const float GEAR_REDUCTION_RATIO_L2M = 2.6f;	 //  LEG->MOTER 齿轮减速比
 const float G_COMPENSATION = 10.0f;
-
+const float TARGET_L0_INIT = 0.17f;
 /*
 		单腿各点角度结构体
 */
@@ -76,7 +76,7 @@ typedef struct Output
 */
 typedef struct VMC_result
 {
-	VMC_result():l0_target(0.35f){}
+	VMC_result():l0_target(TARGET_L0_INIT){}
 	float phi0;
 	float l0;
 	float l0_target;

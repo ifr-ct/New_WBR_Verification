@@ -26,15 +26,24 @@ class Chassis_Motor_output
 	public:
 		Chassis_Motor_output();
 		void Chassis_Motor_Setouttput();
-		float Euler_[3];
-		float d_Euler_[3];
-		float TrueEular_[3];
-		float True_d_Eular_[3];
-		arm_matrix_instance_f32 E_mat;
-		arm_matrix_instance_f32 d_E_mat;
-		arm_matrix_instance_f32 SPIN_MATRIX;
-		arm_matrix_instance_f32 True_E_mat;
-		arm_matrix_instance_f32 True_d_E_mat;
+	
+		float Turn_T;
+		float yaw_error;
+
+		float Theta_error;
+		float d_Theta_error;
+		float AntiSplit_Tp;
+		float Tar_Yaw;
+		float Now_Yaw;
+		
+		float Tar_X;
+		float Tar_V;
+		
+		IFR_PID Anti_Split_PID;
+		IFR_PID Yaw_PID;
+		
+		float Anti_Split_Cal();
+		float Heading_Angle_Cal();
 	
 };
 extern IFR_RS_Motor L_motor_1;

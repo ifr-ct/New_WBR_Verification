@@ -175,7 +175,7 @@ uint8_t accel_temp_dma_tx_buf[SPI_DMA_ACCEL_TEMP_LENGHT] = {0xA2,0xFF,0xFF,0xFF}
 
 float gyro_scale_factor[3][3] = {BMI088_BOARD_INSTALL_SPIN_MATRIX};
 
-float accel_scale_factor[3][3] = {BMI088_BOARD_INSTALL_SPIN_MATRIX};
+float accel_scale_factor[3][3] = {IST8310_BOARD_INSTALL_SPIN_MATRIX};
 
 IMU_UpdataFlagTypedef SPI_UpdataFlag = IMU_Stop;
 

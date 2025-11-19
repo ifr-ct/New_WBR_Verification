@@ -114,15 +114,15 @@ extern float INS_quat[4];//四元数
 
 
 #define BMI088_BOARD_INSTALL_SPIN_MATRIX    \
+    {1.0f, 0.0f, 0.0f},                     \
     {0.0f, 1.0f, 0.0f},                     \
-    {-1.0f, 0.0f, 0.0f},                     \
     {0.0f, 0.0f, 1.0f}                      \
 
 
 #define IST8310_BOARD_INSTALL_SPIN_MATRIX   \
-    {1.0f, 0.0f, 0.0f},                     \
-    {0.0f, 1.0f, 0.0f},                     \
-    {0.0f, 0.0f, 1.0f}                      \
+    {-1.0f, 0.0f, 0.0f},                     \
+    {0.0f, -1.0f, 0.0f},                     \
+    {0.0f, 0.0f, -1.0f}                      \
 
 /****************************************/
 #define CALI_FUNC_CMD_ON        1                   //need calibrate,设置校准
